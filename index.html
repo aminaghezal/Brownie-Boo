@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brownie Boo - Premium Handcrafted Brownies</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i ><img src="images/logo.png" width="60" height="60" alt=""></i>
+                    <h1>Brownie Boo</h1>
+                </div>
+                <nav class="nav-menu">
+                    <a href="#home">Home</a>
+                    <a href="#flavours">Flavours</a>
+                    <a href="#menu">Menu</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+                <a href="order.html" class="btn btn-primary">Order Now</a>
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#home" onclick="closeMobileMenu()">Home</a>
+        <a href="#flavours" onclick="closeMobileMenu()">Flavours</a>
+        <a href="#menu" onclick="closeMobileMenu()">Menu</a>
+        <a href="#contact" onclick="closeMobileMenu()">Contact</a>
+        <a href="order.html" class="btn btn-primary" onclick="closeMobileMenu()">Order Now</a>
+      
+
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="badge">
+                        <i class="fas fa-sparkles"></i>
+                        Handcrafted with Love
+                    </div>
+                    <h2 class="hero-title">
+                        Indulge in Our
+                        <span class="text-orange">Premium Brownies</span>
+                    </h2>
+                    <p class="hero-description">
+                        Experience the perfect blend of rich chocolate, premium ingredients, and artisanal craftsmanship. Each brownie is a masterpiece of flavor that melts in your mouth.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="order.html" class="btn btn-primary btn-large">
+                            <i class="fas fa-heart"></i>
+                            Make an Order
+                        </a>
+                        <a href="#menu" class="btn btn-outline btn-large">View Menu</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="images/main.png" alt="Delicious chocolate brownies" width="500" height="500">
+                        <div class="rating-badge">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>5.0 Rating</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flavours Section -->
+    <section id="flavours" class="flavours">
+        <div class="container">
+            <div class="section-header">
+                <h3>Our Signature Flavours</h3>
+                <p>Discover our carefully crafted selection of premium brownie flavours, each one a unique taste adventure</p>
+            </div>
+            <div class="flavours-grid">
+                <div class="flavour-card">
+                    <div class="card-image">
+                        <img src="images/q.jpg" alt="Classic Chocolate">
+                        <div class="popular-badge">Popular</div>
+                    </div>
+                    <div class="card-content">
+                        <h4>Classic Chocolate</h4>
+                        <p>Rich, fudgy chocolate brownies with premium cocoa</p>
+                    </div>
+                </div>
+                <div class="flavour-card">
+                    <div class="card-image">
+                        <img src="images/q.jpg" alt="Salted Caramel">
+                        <div class="popular-badge">Popular</div>
+                    </div>
+                    <div class="card-content">
+                        <h4>Salted Caramel</h4>
+                        <p>Decadent brownies swirled with salted caramel goodness</p>
+                    </div>
+                </div>
+                <div class="flavour-card">
+                    <div class="card-image">
+                        <img src="images/q.jpg" alt="Walnut Crunch">
+                    </div>
+                    <div class="card-content">
+                        <h4>Walnut Crunch</h4>
+                        <p>Traditional brownies loaded with premium walnuts</p>
+                    </div>
+                </div>
+                <div class="flavour-card">
+                    <div class="card-image">
+                        <img src="images/q.jpg" alt="Double Chocolate">
+                        <div class="popular-badge">Popular</div>
+                    </div>
+                    <div class="card-content">
+                        <h4>Double Chocolate</h4>
+                        <p>For chocolate lovers - extra rich with chocolate chips</p>
+                    </div>
+                </div>
+                <div class="flavour-card">
+                    <div class="card-image">
+                        <img src="images/q.jpg" alt="Peanut Butter">
+                    </div>
+                    <div class="card-content">
+                        <h4>Peanut Butter</h4>
+                        <p>Creamy peanut butter swirled through fudgy brownies</p>
+                    </div>
+                </div>
+                <div class="flavour-card">
+                    <div class="card-image">
+                        <img src="images/q.jpg" alt="Raspberry Delight">
+                    </div>
+                    <div class="card-content">
+                        <h4>Raspberry Delight</h4>
+                        <p>Fresh raspberry pieces in rich chocolate brownies</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <div class="section-header">
+                <h3>Our Menu</h3>
+                <p>Choose from our variety of brownie boxes and individual treats</p>
+            </div>
+            <div class="menu-grid">
+                <div class="menu-card">
+                    <div class="card-content">
+                        <h4>Classic Box</h4>
+                        <p class="items">6 Mixed Brownies</p>
+                         <img src="images/2.jpg" width="200" height="200" alt="Raspberry Delight">
+                        <p class="price">1600 DA</p>
+                        <p class="description">Perfect for sharing or treating yourself</p>
+                        <a href="order.html" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+                <div class="menu-card popular">
+                    <div class="most-popular-badge">Most Popular</div>
+                    <div class="card-content">
+                        <h4>Family Pack</h4>
+                        <p class="items">12 Mixed Brownies</p>
+                        <p class="price">3200 DA</p>
+                        <p class="description">Great for family gatherings and parties</p>
+                        <a href="order.html" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="card-content">
+                        <h4>Party Box</h4>
+                        <p class="items">24 Mixed Brownies</p>
+                        <p class="price">7000 DA</p>
+                        <p class="description">Perfect for celebrations and events</p>
+                        <a href="order.html" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="card-content">
+                        <h4>Single Brownie</h4>
+                        <p class="items">1 Premium Brownie</p>
+                        <p class="price">$4.99</p>
+                        <p class="description">Try any of our signature flavours</p>
+                        <a href="order.html" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="card-content">
+                        <h4>Couple's Delight</h4>
+                        <p class="items">4 Premium Brownies</p>
+                        <p class="price">$18.99</p>
+                        <p class="description">Perfect for a romantic treat</p>
+                        <a href="order.html" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+                <div class="menu-card popular">
+                    <div class="most-popular-badge">Most Popular</div>
+                    <div class="card-content">
+                        <h4>Custom Box</h4>
+                        <p class="items">Your Choice</p>
+                        <p class="price">Varies</p>
+                        <p class="description">Create your own perfect combination</p>
+                        <a href="order.html" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h3>Share Your Thoughts</h3>
+                <p>We'd love to hear from you! Share your feedback, suggestions, or just say hello to our team.</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <div class="form-card">
+                        <h4>Get in Touch</h4>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" name="message" rows="4" placeholder="Share your thoughts, feedback, or suggestions..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="contact-info">
+                    <div class="bakery-image">
+                        <img src="images/q.jpg" width="400" height="400" alt="Our cozy bakery">
+                    </div>
+                    <div class="info-card">
+                        <h4>Why Choose Us?</h4>
+                        <ul class="features-list">
+                            <li>
+                                <i class="fas fa-heart"></i>
+                                Made with love and premium ingredients
+                            </li>
+                            <li>
+                                <i class="fas fa-star"></i>
+                                Consistently rated 5 stars by customers
+                            </li>
+                            <li>
+                                <i class="fas fa-sparkles"></i>
+                                Handcrafted in small batches for freshness
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i ><img src="images/logo.png" width="60" height="60" alt=""></i>
+                        <h5>Brownie Boo</h5>
+                    </div>
+                    <p>Crafting the perfect brownies with love, passion, and premium ingredients since day one.</p>
+                </div>
+                <div class="footer-section">
+                    <h6>Quick Links</h6>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#flavours">Flavours</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h6>Contact Info</h6>
+                    <ul>
+                        <li>📧 brownieboo@gmail.com</li>
+                        <li>📞 0657757691</li>
+                        <li>📍 address</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sweet Brownies. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

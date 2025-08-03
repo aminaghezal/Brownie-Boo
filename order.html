@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order - Sweet Brownies</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="back-link">
+                    <i class="fas fa-arrow-left"></i>
+                    Back to Home
+                </a>
+                <h1>Create Your Perfect Box</h1>
+                <div class="cart-summary">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cartCount">0 items</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="order-page">
+        <div class="container">
+            <div class="order-content">
+                <!-- Flavour Selection -->
+                <div class="flavour-selection">
+                    <div class="section-header">
+                        <h2>Choose Your Flavours</h2>
+                        <p>Mix and match your favorite flavours to create the perfect brownie box! <span class="highlight">It's like a delicious game!</span></p>
+                    </div>
+
+                    <div class="flavours-grid" id="flavoursGrid">
+                        <!-- Flavours will be populated by JavaScript -->
+                    </div>
+                </div>
+
+                <!-- Order Summary & Customer Info -->
+                <div class="order-sidebar">
+                    <!-- Order Summary -->
+                    <div class="order-summary">
+                        <div class="card-header">
+                            <h3>
+                                <i class="fas fa-shopping-cart"></i>
+                                Your Brownie Box
+                            </h3>
+                        </div>
+                        <div class="card-content">
+                            <div id="cartItems" class="cart-items">
+                                <p class="empty-cart">Start adding delicious brownies to your box!</p>
+                            </div>
+                            <div id="cartTotal" class="cart-total" style="display: none;">
+                                <div class="total-line">
+                                    <span>Total (<span id="totalItems">0</span> items):</span>
+                                    <span class="total-price">$<span id="totalPrice">0.00</span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Customer Information -->
+                    <div id="customerForm" class="customer-form" style="display: none;">
+                        <div class="card-header">
+                            <h3>Delivery Information</h3>
+                        </div>
+                        <div class="card-content">
+                            <form id="orderForm">
+                                <div class="form-group">
+                                    <label for="customerName">Full Name</label>
+                                    <input type="text" id="customerName" name="customerName" placeholder="Enter your name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="customerEmail">Email</label>
+                                    <input type="email" id="customerEmail" name="customerEmail" placeholder="Enter your email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="customerPhone">Phone</label>
+                                    <input type="tel" id="customerPhone" name="customerPhone" placeholder="Enter your phone number" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="customerAddress">Delivery Address</label>
+                                    <textarea id="customerAddress" name="customerAddress" rows="3" placeholder="Enter your full address" required></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="customerNotes">Special Notes (Optional)</label>
+                                    <textarea id="customerNotes" name="customerNotes" rows="2" placeholder="Any special requests or notes..."></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-full btn-large">
+                                    Place Order - $<span id="finalPrice">0.00</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="order.js"></script>
+</body>
+</html>
